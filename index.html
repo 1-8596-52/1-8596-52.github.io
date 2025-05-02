@@ -13,3 +13,119 @@
      <frame name="sobrante" src="alcohol.html">
      <frame name="sobrante" src="benzodiacepinas.html">
 </html>
+
+     
+<!DOCTYPE html><html><head>    <title>Introducción</title>    <style>        body {            background-image: url("https://png.pngtree.com/background/20210714/original/pngtree-gray-color-light-background-with-leaf-brush-picture-image_1225796.jpg");            background-size: cover;            background-repeat: no-repeat;            background-attachment: fixed;            color: black;            font-family: Arial, sans-serif;        }    </style></head><body>    <center><img src="WhatsApp Image 2025-04-03 at 3.44.26 PM.jpeg" height="70" width="600" align="center"></center>   
+
+
+<html lang="es">
+<head>
+ <center> <meta charset="UTF-8">
+  <title>Máquina de Escribir sin Cursor</title>
+  <style>
+    .maquina {
+      font-size: 32px;
+      font-family: monospace;
+      white-space: nowrap;
+      overflow: hidden;
+      width: fit-content;
+      animation: escribir 4s steps(40, end);
+      /* Ya no hay borde ni animación de parpadeo */
+    }
+
+    @keyframes escribir {
+      from { width: 0; }
+      to { width: 100%; }
+    }
+  </style>
+</head>
+<body>
+ <b> <h1 class="maquina">¡INTRODUCCIÓN!</h1>
+</body>
+</html></center> </b>
+
+
+
+
+
+
+
+ <b> <center><font face="arial">    En el marco de la estrategia de Prevención de Adicciones, los alumnos del grupo 6203        de la<br> Capacitación en Informática del Colegio de Bachilleres del Estado de Hidalgo, Plantel Orizabita, presentamos este proyecto web con el objetivo de concientizar a los jóvenes        sobre los riesgos<br> asociados al consumo de sustancias nocivas. A través de un sitio interactivo y accesible, <br>       alineándonos así con los principios de la Nueva Escuela Mexicana (NEM).<br> <br>        Este sitio web integra elementos multimedia y recursos gráficos        para destacar los efectos <br>dañinos de las drogas, el alcohol, el tabaco y otras adicciones.        Además emplea herramientas <br>tecnológicas como código HTML, JavaScript y CSS        para crear una experiencia dinámica que <br>refuerce el mensaje preventivo.        Nuestro compromiso es contribuir a la formación de una <br>comunidad estudiantil consciente,        resiliente, capaz de enfrentar estos desafíos con<br> conocimiento y responsabilidad.<br><br>    </font></center></b>
+
+     <b><br><br> <i><center><font face="Century Schoolbook L" size="5">Tu vida vale mas que cualquier substancia. Cuídala,protégela,vivela.</i></font></center> 
+
+    <br><br><center><img src="https://consultorsalud.com/wp-content/uploads/2023/07/Lucha-contra-el-Uso-Indebido-de-Drogas-Una-Iniciativa-Global-para-la-Prevencion-y-el-Tratamiento.jpg" height="200" width="500"></center><br><br><align="center"></center></b>
+
+<font face="Century Schoolbook L" size="5">   <b>  </font></center><ol type="1"><li>¡Tu vida vale más que cualquier sustancia. Cuídala, protégela, vívela!.</li> <li>Ser valiente es decir no cuando todos dicen sí.</li><li>No necesitas drogas para brillar. Tu luz es natural.</li> <li>Elige tus sueños, no tus vicios.</li> <li>La mejor decisión es la que protege tu mente, tu cuerpo y tu futuro.</li><li>Cada día libre de drogas es una victoria para ti y los tuyos.</li><li>Las drogas solo te alejan del camino hacia una vida feliz.</li><li>Decir no a las drogas es decir sí a tus metas.</li><li>Tu futuro es demasiado valioso como para arriesgarlo por un mal momento.</li></ol></center></b>
+
+
+
+
+
+
+
+<center>
+   <video width="620" height="420" controls>
+   <source src="mivideo.mp4.mp4" type="video/mp4">
+introduciónn
+   </video>
+</center>
+
+
+
+
+
+
+<canvas id="puntos-cayendo" style="position: fixed; top: 0; left: 0; pointer-events: none; z-index: 9999;"></canvas>
+
+<script>
+  const canvas = document.getElementById('puntos-cayendo');
+  const ctx = canvas.getContext('2d');
+
+  let width = canvas.width = window.innerWidth;
+  let height = canvas.height = window.innerHeight;
+
+  window.addEventListener('resize', () => {
+    width = canvas.width = window.innerWidth;
+    height = canvas.height = window.innerHeight;
+  });
+
+  const numPuntos = 250;
+  const puntos = [];
+
+  for (let i = 0; i < numPuntos; i++) {
+    puntos.push({
+      x: Math.random() * width,
+      y: Math.random() * height,
+      r: Math.random() * 5 + 1,
+      velocidad: Math.random() * 1.5 + 0.5
+    });
+  }
+
+  function dibujar() {
+    ctx.clearRect(0, 0, width, height);
+    ctx.fillStyle = 'skyblue';
+    for (const p of puntos) {
+      ctx.beginPath();
+      ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+      ctx.fill();
+
+      p.y += p.velocidad;
+      if (p.y > height) {
+        p.y = 0;
+        p.x = Math.random() * width;
+      }
+    }
+
+    requestAnimationFrame(dibujar);
+  }
+
+  dibujar();
+</script>
+
+
+</body>
+</html>
+
+
+</body></html>
